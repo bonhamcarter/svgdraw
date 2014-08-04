@@ -155,6 +155,52 @@ path {
 
 }
 
+.get {
+
+  stroke-dasharray:630.5989990234375;
+  stroke-dashoffset:630.5989990234375;
+  -webkit-animation: dash-1 3.5s linear forwards 1;
+   animation: dash-1 10s linear 1;
+   -webkit-animation: filler 3.5s 1;
+   animation: dash-1 10s linear 1;
+  fill: none ;
+  stroke:blue;
+ -webkit-animation-iteration-count: 1; /* Safari and Chrome */
+    animation-iteration-count: 1;
+}
+
+
+
+@-webkit-keyframes dash-1 {
+  from {
+    stroke-dashoffset: 630.5989990234375;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+
+}
+
+@-webkit-keyframes filler {
+  from {
+    fill: none;
+  }
+  to {
+    fill: red;
+  }
+
+}
+
+@keyframes dash-1 {
+  from {
+    stroke-dashoffset: 630.5989990234375;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+
+
+}
 
 
 
@@ -186,6 +232,33 @@ path {
 
 
 						</svg>
+
+
+            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<path class="get" fill="none" stroke="#3FA9F5" d="M52,45.125L40.667,36.5H29l-7.75,6.083l-2.75,8.083V61l4.583,3.667l5.458,4.667l6.063,2
+  l7.031-1.667l8.016-5l4.341,1L82.5,82.333V86c0,0-2.083,4,0.25,5.333S89.542,95,90.542,95s5.146-1.333,5.146-1.333l3.813-4V84v-4
+  l5.25-8.5l3.25-5h8l5.667-2.25l2.249-4.125L142.5,71v3l9,2.333V82l5.583,16l-7.541,5c0,0-1.271,7.667-1.271,8.667
+  s3.365,8.333,3.365,8.333l8.016,7.333c0,0,8.008,2,9.008,0s7.337-8,7.337-8l2.335-8.333c0,0-1.665-4.739-2.665-6.536
+  S167.332,95,167.332,95l-3.999,0.333c0,0,4.667,19.667-2.333,0C154,75.667,155.667,75,155.667,75l1.666-2.667L159.667,70l11-3.667
+  L174,65.667L179.417,68l4.083-0.667V63l-1.75-5.667c0,0-6.542-1.334-7.542-0.667S173.271,61,173.271,61s-7.969,2.667-8.969,2.667
+  S154.651,66,154.651,66l-4.326-3.333c0,0-6.33,0-6.996,1s-1.331,3-1.331,3l-15.666-8.333l-0.666-11L120,41.667L113.333,39l-10,3.667
+  L101.5,48c0,0,0.5,8,0,9s0,6,0,6l-8.167,13.667L87.667,79l-3.333,1.333l-32-21L52,45.125z"/>
+<path fill="none" d="M52.333,61.667"/>
+<path fill="none" stroke="#3FA9F5" d="M36.5,107.333V111v4l4.5,2.5h4l2.333-1.833l12.333,3.666l-1,8.889L61.333,132l6.333,6.25
+  l5,2.25H77l7.667,19.5l-2,4.667l2,6L87,174.333L93,177l6.75-2.333L102.5,171v-6l-2.5-6.333l-5-4L91.667,154l-6.583-17.667
+  l4.417-8.111V122l-1.167-5.667l19.667-9l7,4.667l7-1l6.416-3.333l2.084-4.001V97c0,0-3.5-5.334-4.5-5.667S121,88,120,88
+  s-6.667,2.333-6.667,2.333S109.751,93,109.417,94s-1.917,6-1.917,6v6l-13.833,3l-7,4.333l-3.167-2.249l-5.167-1.584H70
+  c0,0-5.667,0.833-6,1.833s-3.333,4.334-3.333,4.334l-8.417-2L48.5,112v-3l-3.167-3.667l-3.667-1.667L36.5,107.333z"/>
+<polygon fill="none" stroke="#3FA9F5" points="81,137.5 79,137.5 88.5,159 88.5,157 "/>
+</svg>
+
+
+
+
+
+
+
 
 
 <svg version="1.1" class="wire-wrapper ps4-console-front" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -230,7 +303,7 @@ path {
 
 						<script type="text/javascript">
 
-						var path = document.querySelector('.screen-edge-outer');
+						var path = document.querySelector('.get');
 						var length = path.getTotalLength();
 						console.log(length);
 
